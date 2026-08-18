@@ -1,0 +1,25 @@
+{
+  "name": "dsh-theme-anime",
+  "version": "1.0.0",
+  "description": "二次元「樱」主题皮肤：樱花粉 × 魔法紫罗兰的双色板 token 覆盖层（light/dark）+ 网页标题与图标",
+  "private": true,
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-theme"
+      ],
+      "immediately": true
+    }
+  },
+  "license": "MIT"
+}
